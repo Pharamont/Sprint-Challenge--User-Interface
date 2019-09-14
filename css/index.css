@@ -240,7 +240,7 @@ header nav img {
     border-bottom: 1px dashed black;
 }
 
-.middle-content>h2 {
+.middle-content > h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
@@ -266,6 +266,7 @@ header nav img {
     width: 100%;
     margin-bottom: 15px;
 }
+
 .boxes p {
     font-size: 15px;
     margin-bottom: 15px;
@@ -280,6 +281,11 @@ header nav img {
     color: #000;
 }
 
+.boxes a:hover {
+    color: #fff;
+    border-color: #bf2616;
+    background: #ed2611;
+}
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -289,6 +295,11 @@ header nav img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.7s ease-in-out;
+}
+
+.middle-content .boxes .box:hover {
+    transform: rotate(360deg);
 }
 
 /* Color IDs For Home Page Boxes */
@@ -364,33 +375,75 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+footer nav a:hover {
+    color: #ed2611;
+}
 
 @media only screen and (max-width: 800px) {
-    header nav img{
+    header nav {
+        justify-content: space-around;
+    }
+
+    header nav img {
         width: 80%;
     }
-    header nav a{
-        border: 1px solid red;
-    }
-    
-    .boxes article {
-        width: 65%;
-    }
+
     .top-content {
+        flex-direction: column;
         width: 65%;
         margin: 0 auto 20px;
     }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    .middle-content > h2 {
+        width: 65%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        width: 65%;
+        margin: 0 auto 20px;
+    }
+    .middle-content .boxes .box {
+        width: 100px;
+        margin: 20px 5px 0;
+    }
+
+    .boxes article {
+        width: 100%;
+    }
+
     .middle-content {
         border: none;
         margin: 0;
     }
-    .text-container{
-        width: 65%;
+
+    .text-container {
+        width: 100%;
+        margin-bottom: 20px;
     }
+    
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        margin: 0 auto 20px;
+        
+    }
+
     footer {
         display: flex;
         justify-content: center;
     }
+
     footer nav {
         width: 90%;
     }
