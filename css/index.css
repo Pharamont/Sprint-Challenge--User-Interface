@@ -78,12 +78,34 @@ header {
     flex-direction: column;
 
     width: 100%;
-
-    border: 1px solid red;
+    margin-bottom: 25px;
 }
 
-nav {
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 
+    padding: 15px 0 35px 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+header nav a:hover {
+    color: #ed2611;
+}
+
+a {
+    transition: 0.2s;
+}
+
+header nav img {
+    /* Translated to keep inline with text in the nav */
+    transform: translateY(2px); 
 }
 
 .jumbo-home {
