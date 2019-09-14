@@ -286,6 +286,7 @@ header nav img {
     border-color: #bf2616;
     background: #ed2611;
 }
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
@@ -377,6 +378,7 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
 footer nav a:hover {
     color: #ed2611;
 }
@@ -405,7 +407,7 @@ footer nav a:hover {
         margin: 0 auto;
         padding: 0;
     }
-    
+
     .middle-content .boxes {
         display: flex;
         flex-wrap: wrap;
@@ -414,6 +416,7 @@ footer nav a:hover {
         width: 65%;
         margin: 0 auto 20px;
     }
+
     .middle-content .boxes .box {
         width: 100px;
         margin: 20px 5px 0;
@@ -432,13 +435,13 @@ footer nav a:hover {
         width: 100%;
         margin-bottom: 20px;
     }
-    
-    .bottom-content{
+
+    .bottom-content {
         display: flex;
         flex-direction: column;
         width: 65%;
         margin: 0 auto 20px;
-        
+
     }
 
     footer {
