@@ -108,12 +108,17 @@ header nav img {
     transform: translateY(2px); 
 }
 
-.jumbo-home {
-    background: url('../img/jumbo.jpg');
+.jumbo {
     height: 153px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.jumbo-home {
+    background: url('../img/jumbo.jpg');
+}
+.jumbo-about{
+    background: url('../img/jumbo-about.png');
 }
 
 .top-content {
