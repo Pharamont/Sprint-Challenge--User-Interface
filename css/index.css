@@ -300,6 +300,8 @@ header nav img {
 
 .middle-content .boxes .box:hover {
     transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 
 /* Color IDs For Home Page Boxes */
