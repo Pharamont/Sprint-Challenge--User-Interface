@@ -68,11 +68,30 @@ p {
 
 /* ===== Edit After This Line ===== */
 
-
-
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    border: 1px solid red;
+}
+
+nav {
+
+}
+
+.jumbo-home {
+    background: url('../img/jumbo.jpg');
+    height: 153px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .top-content {
