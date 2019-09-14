@@ -149,13 +149,25 @@ header nav img {
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
+    background: #000;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* Color IDs For Home Page Boxes */
+#c-1 { background: teal; }
+#c-2 { background: gold; }
+#c-3 { background: cadetblue; }
+#c-4 { background: coral; }
+#c-5 { background: crimson; }
+#c-6 { background: forestgreen; }
+#c-7 { background: darkorchid; }
+#c-8 { background: hotpink; }
+#c-9 { background: indigo; }
+#c-10 { background: dodgerblue; }
 
 .bottom-content {
     display: flex;
