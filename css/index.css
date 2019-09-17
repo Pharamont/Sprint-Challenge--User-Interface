@@ -3,60 +3,152 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
@@ -66,9 +158,61 @@ p {
     line-height: 1.4;
 }
 
+/* ===== Edit After This Line ===== */
+
 .container {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    padding: 15px 0 35px 0;
+}
+
+header nav a {
+    color: #000;
+}
+
+header nav a:hover {
+    color: #ed2611;
+}
+
+a {
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+header nav img {
+    /* Translated to keep inline with text in the nav */
+    transform: translateY(2px);
+}
+
+.jumbo {
+    height: 153px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbo-home {
+    background: url('../img/jumbo.jpg');
+}
+
+.jumbo-about {
+    background: url('../img/jumbo-about.png');
 }
 
 .top-content {
@@ -82,7 +226,13 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+}
+
+.top-content .text-container-wide {
+    width: 98%;
+    padding: 0 1%;
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -90,7 +240,7 @@ p {
     border-bottom: 1px dashed black;
 }
 
-.middle-content h2 {
+.middle-content > h2 {
     padding: 0 2%;
     margin-bottom: 0;
 }
@@ -101,15 +251,99 @@ p {
     justify-content: space-evenly;
 }
 
+.boxes article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+
+    width: Calc(50% - 25px);
+
+    border-bottom: 1px dashed #000;
+}
+
+.boxes img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.boxes p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.boxes a {
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+
+    color: #000;
+}
+
+.boxes a:hover {
+    color: #fff;
+    border-color: #bf2616;
+    background: #ed2611;
+}
+
 .middle-content .boxes .box {
     width: 12.5%;
     height: 100px;
-    background: black;
     margin: 20px 2.5%;
+    background: #000;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.7s ease-in-out;
+}
+
+.middle-content .boxes .box:hover {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+/* Color IDs For Home Page Boxes */
+#c-1 {
+    background: teal;
+}
+
+#c-2 {
+    background: gold;
+}
+
+#c-3 {
+    background: cadetblue;
+}
+
+#c-4 {
+    background: coral;
+}
+
+#c-5 {
+    background: crimson;
+}
+
+#c-6 {
+    background: forestgreen;
+}
+
+#c-7 {
+    background: darkorchid;
+}
+
+#c-8 {
+    background: hotpink;
+}
+
+#c-9 {
+    background: indigo;
+}
+
+#c-10 {
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +377,79 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #ed2611;
+}
+
+@media only screen and (max-width: 800px) {
+    header nav {
+        justify-content: space-around;
+    }
+
+    header nav img {
+        width: 80%;
+    }
+
+    .top-content {
+        flex-direction: column;
+        width: 65%;
+        margin: 0 auto 20px;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    .middle-content > h2 {
+        width: 65%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        width: 65%;
+        margin: 0 auto 20px;
+    }
+
+    .middle-content .boxes .box {
+        width: 100px;
+        margin: 20px 5px 0;
+    }
+
+    .boxes article {
+        width: 100%;
+    }
+
+    .middle-content {
+        border: none;
+        margin: 0;
+    }
+
+    .text-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+        margin: 0 auto 20px;
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav {
+        width: 90%;
+    }
 }
